@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>06 registerForm</title>
+<link rel="stylesheet" type="text/css" href="./css/registerStyle.css">
+</head>
+<body>
+<!-- table>(tr>th)+(tr>td*2)*12 -->
+<form name="registForm" action="register" method="post">
+	<table>
+		<tr>
+			<th class="titles" colspan="2" >가입폼</th>
+		</tr>
+		<tr>
+			<td>이름*</td>
+			<td><input type="text" name="userName" /></td>
+		</tr>
+		<tr>
+			<td>아이디*</td>
+			<td><input type="text" name="userId" size="10" /></td>
+		</tr>
+		<tr>
+			<td>비밀번호*</td>
+			<td><input class="inputs" type="password" name="userPass" size="10" /></td>
+		</tr>
+		<tr>
+			<td>비밀번호 확인*</td>
+			<td><input class="inputs" type="password" name="passConfirm" size="10" /></td>
+		</tr>
+		<tr>
+			<td>성별</td>
+			<td><input type="radio" name="gender" value="M" id="male"/>
+			 	<label for="male">남</label>
+				<input type="radio" name="gender" value="F" id="femail"/>
+				<label for="female">여</label>
+			</td>
+		</tr>
+		<tr>
+			<td>연령대</td>
+			<td>
+				<select name="age">
+				<option value="" selected="selected">== 연령대를 선택 ==</option>
+				<option value="1">10살 미만</option>
+				<option value="10">10대</option>
+				<option value="20">20대</option>
+				<option value="30">30대</option>
+				<option value="40">40대</option>
+				<option value="50">50대</option>
+				<option value="60">60대</option>
+				<option value="70">70대</option>
+				<option value="80">80대</option>
+				<option value="90">80대 이상</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>취미</td>
+			<td>
+				<input type="checkbox" id="chk1" name="hobby" value="sport" />
+				<label for="chk1">스포츠</label>
+				<input type="checkbox" id="chk2" name="hobby" value="surfing"/>
+				<label for="chk2">서핑</label>
+				<input type="checkbox" id="chk3" name="hobby" value="camping"/>
+				<label for="chk3">캠핑</label>
+				<input type="checkbox" id="chk4" name="hobby" value="sing" />
+				<label for="chk4">노래</label>
+				<input type="checkbox" id="chk5" name="hobby" value="travel"/>
+				<label for="chk5">여행</label>
+			</td>                              
+		</tr>
+		<tr>
+			<td>이메일*</td>
+			<td>
+				<input type="text" name="emailId" size="10"/> @
+				<select name="emailDomain">
+					<option value="" selected="selected">== 메일주소 선택 ==</option>
+					<option value="naver.com">네이버</option>
+					<option value="daum.net">다음</option>
+					<option value="gmail.com">지메일</option>
+					<option value="nate.com">네이트</option>
+					<option value="yahoo.co.kr">야후</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>전화번호</td>
+			<td>
+				<select name="phone1" >
+					<option value="" selected="selected">== 번호 선택 ==</option>
+					<option value="02">서울02</option>
+					<option value="031">경기031</option>
+					<option value="032">인천032</option>
+					<option value="033">강원033</option>
+					<option value="041">충남041</option>
+					<option value="042">대전042</option>
+					<option value="043">충북043</option>
+					<option value="044">세종044</option>
+					<option value="051">부산051</option>
+					<option value="052">울산052</option>
+					<option value="053">대구053</option>
+					<option value="054">경북054</option>
+					<option value="055">경남055</option>
+					<option value="061">전남061</option>
+					<option value="062">광주062</option>
+					<option value="063">전북063</option>
+					<option value="064">제주064</option>
+				</select>
+				-
+				<input type="text" name="phone2" size="7"/> -
+				<input type="text" name="phone3" size="7"/>
+			</td>
+		</tr>
+		<tr>
+			<td>주소</td>
+			<td><select name="address" >
+				<option value="" selected="selected">== 주소 선택 ==</option>
+				<option value="경기도">경기도</option>
+				<option value="서울">서울</option>
+				<option value="충청도">충청도</option>
+				<option value="전라도">전라도</option>
+				<option value="강원도">강원도</option>
+				<option value="제주도">제주도</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>소개말</td>
+			<td>
+				<textarea name="intro" id="" cols="30" rows="10"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<th colspan="2">
+				<input type="submit" value="가입하기"/>
+				<input type="reset" value="초기화"/>
+			</td>
+		</tr>
+	</table>
+</form>
+
+</body>
+</html>
