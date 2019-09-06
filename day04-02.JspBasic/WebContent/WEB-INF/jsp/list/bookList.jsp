@@ -9,6 +9,7 @@
 <head>
 <meta charset="UTF-8">
 <title>책 목록(WEB-INF 하위에서 응답)</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 <%
@@ -52,7 +53,7 @@
 %>
 	<!-- 브라우저에 HTML 테이블로 출력 -->
 <h3>(WEB-INF 하위에서 응답)</h3>
-<table>
+<table class="w3-table">
 	<tr>
 		<th>책 번호</th>
 		<th>ISBN</th>
