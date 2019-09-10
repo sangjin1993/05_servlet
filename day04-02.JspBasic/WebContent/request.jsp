@@ -48,7 +48,7 @@
 		(1) 서버에서 발생하여 공유객체에 추가되는 값
 		(2)	request, session, context(application) 중 어느 공유 객체에서도 추가될 수 있다.
 		(3) Object 타입의 모든 데이터 형을 사용가능
-		(4) 서버에서 발생하므로
+		(4) 서버에서 발생하므로	s
 			setAttribute(String, Object) 메소드로 추가
 			getAttribute(String) 메소드로 추출
  --%>
