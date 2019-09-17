@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Cookie 로그인</title>
+<title>Session 로그인</title>
 <style type="text/css">
 	table, th, td {
 		border: 1px solid black;
@@ -14,8 +14,9 @@
 <body>
 
 <!-- table>(tr>th+td)*3 -->
-<h3>로그인 하세요(Cookie)</h3>
-<form action="${pageContext.request.contextPath}/cookie/login" method="post">
+<h3>로그인 하세요(Session)</h3>
+<h3>로그인 된 사용자 아이디:${sessionScope.userId}</h3>
+<form action="login" method="post">
 	<table>
 		<tr>
 			<th>유저 아이디</th>
